@@ -26,6 +26,18 @@ super + alt + f
 super + x
     arcolinux-logout
 
+#Firefox
+ctrl + alt + f
+     firefox
+
+#Rofi theme selector
+ctrl + alt + r
+  rofi-theme-selector
+
+#Spotify
+ctrl + alt + s
+   spotify
+
 #File-Manager
 super + shift + Return
     thunar
