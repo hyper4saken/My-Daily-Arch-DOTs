@@ -41,6 +41,7 @@ picom -b --experimental-backends --config /home/tshering/.config/picom/picom.con
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
 nitrogen --restore &
+run com.github.wwmm.pulseeffects
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &
