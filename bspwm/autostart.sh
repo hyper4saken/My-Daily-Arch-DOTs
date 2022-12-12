@@ -27,21 +27,25 @@ $HOME/.config/polybar/launch.sh &
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+dunst &
 
+#DualMonitor
+#xrandr --output eDP1 --mode 1920x1080 --pos 2560x0 --rotate normal --output HDMI1 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off &
+$HOME/.config/bspwm/dualmonitor.sh &
 #conky -c $HOME/.config/bspwm/system-overview &
-run variety &
+#run variety &
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
-picom -b --experimental-backends --config /home/tshering/.config/picom/picom.conf
+picom -b --experimental-backends --config /home/hyper4saken/.config/picom/picom.conf
 #picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
 nitrogen --restore &
-run com.github.wwmm.pulseeffects
+#run com.github.wwmm.pulseeffects
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &

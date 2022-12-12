@@ -24,11 +24,11 @@ super + alt + f
 
 #arcolinux-logout
 super + x
-    arcolinux-logout
+    archlinux-logout
 
 #Firefox
-ctrl + alt + f
-     firefox
+ctrl + alt + b
+     brave-browser
 
 #Rofi theme selector
 ctrl + alt + r

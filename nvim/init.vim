@@ -6,7 +6,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'vifm/vifm.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ctrlpvim/ctrlp.vim'
 " Syntax
 Plug 'tpope/vim-markdown'
