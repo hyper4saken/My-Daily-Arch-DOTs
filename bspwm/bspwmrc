@@ -40,7 +40,7 @@ bspc config presel_feedback_color	"#5e81ac"
 
 
 #Single monitor
-#bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+#bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9 10
 
 #Dual monitor
 #find out names with arandr or xrandr
@@ -69,15 +69,20 @@ bspc rule -a feh state=floating
 bspc rule -a 'Tor Browser:Navigator' state=pseudo_tiled private=on
 bspc rule -a 'Nitrogen' state=floating
 bspc rule -a 'Pamac-manager' state=floating
+bspc rule -a 'spotify' state=floating
 bspc rule -a 'lxappearance' state=floating
 bspc rule -a 'xdman-Main' state=floating
 bspc rule -a 'LibreWolf' state=floating
 bspc rule -a 'Bitwarden' state=floating
 bspc rule -a 'packettracer' state=floating private=on
 #bspc rule -a mpv desktop='^2'  follow=on
-bspc rule -a 'Brave-browser' state=floating
-bspc rule -a easyeffects='^10' state=floating follow=on
+bspc rule -a simplesceenrecorderi desktop='^9' state=floating 
+bspc rule -a Brave-browser state=floating
+bspc rule -a obs desktop='9' state=floating
+bspc rule -a easyeffects desktop='^10' state=floating follow=on
+bspc rule -a qbittorrent state=floating
 bspc rule -a mpv desktop='^2'state=floating follow=on
+bspc rule -a winscp.exe state=floating
 
 #bspc rule -a mpv state=floating sticky=on
 #bspc rule -a Font-manager state=floating
@@ -98,7 +103,7 @@ bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-#bspc rule -a Firefox desktop='^1' follow=on
+bspc rule -a Firefox desktop='^2' follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl desktop='^2' follow=on
