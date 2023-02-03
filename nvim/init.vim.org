@@ -33,7 +33,7 @@ set nobackup nowritebackup
 "Color Settings
 
 colorscheme gruvbox
-"let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'hard'
 "let g:gruvbox_invert_tabline = 1
 "let g:background_transparent_bg = 1
 set background=dark cursorline 
@@ -66,7 +66,8 @@ function! s:goyo_leave()
 endfunction
 
 "Airline Theme
-let g:airline_theme='luna'
+" let g:airline_theme='luna'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
