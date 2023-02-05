@@ -1,2 +1,6 @@
 require("hyper4saken.remap")
-require("hyper4saken.colorscheme")
+--require("hyper4saken.colorscheme")
+--require("hyper4saken.comment")
+--require("hyper4saken.lualine")
+--require("hyper4saken.nvim-cmp")
+require("hyper4saken.set")
