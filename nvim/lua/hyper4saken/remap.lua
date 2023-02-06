@@ -2,11 +2,22 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap --for conciseness
 
--- general keymaps
+-- general keymaps for insert mode
+keymap.set("i", "jk", "<ESC>") 
+keymap.set("i", "<C-b>", "<ESC>^i") -- begining of line
+keymap.set("i", "<C-e>", "<END>") --end of line
+
+-- Cursor movement in insert mode
+keymap.set("i", "<C-h>", "<Left>") -- move left 
+keymap.set("i", "<C-l>", "<Right>") -- move right
+keymap.set("i", "<C-j>", "<Down>") --  move down
+keymap.set("i", "<C-k>", "<Up>") -- move up
+
+-- general keymaps for normal mode
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
-keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
-keymap.set("n", "<leader>s", ":w<CR>") -- save file in normal mode
+keymap.set("n", "<leader>sf", ":w<CR>") -- save file in normal mode
+keymap.set("n", "<leader>wq", ":wq<CR>") --  write and quit nvim
 keymap.set("n", "x", '"_x')
 
 -- window split
@@ -27,3 +38,6 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
 -- vim-maximizer
 keymap.set("n","<leader>sm", ":MaximizerToggle<CR>")
+
+-- nvim-tree
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
