@@ -14,7 +14,6 @@ keymap.set("i", "<C-j>", "<Down>") --  move down
 keymap.set("i", "<C-k>", "<Up>") -- move up
 
 -- general keymaps for normal mode
-keymap.set("n", "<leader>pv", vim.cmd.Ex)
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
 keymap.set("n", "<leader>sf", ":w<CR>") -- save file in normal mode
 keymap.set("n", "<leader>wq", ":wq<CR>") --  write and quit nvim
@@ -41,3 +40,5 @@ keymap.set("n","<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>") -- toggle file explore
+

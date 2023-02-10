@@ -28,14 +28,34 @@ return require('packer').startup(function(use)
   -- commenting with gc
   use { "numToStr/Comment.nvim" }
 
-  -- autocompletion
-  use { "hrsh7th/nvim-cmp" }
-  use { "hrsh7th/cmp-buffer" }
-  use { "hrsh7th/cmp-path" }
+  -- nvim tree
+  use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+          'nvim-tree/nvim-web-devicons', -- optional, for file icons
+      },
+      tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+  use {
+      'VonHeikemen/lsp-zero.nvim',
+      branch = 'v1.x',
+      requires = {
+          -- LSP Support
+          {'neovim/nvim-lspconfig'},             -- Required
+          {'williamboman/mason.nvim'},           -- Optional
+          {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-  -- snippets
-  use { "L3MON4D3/LuaSnip" }
-  use { "saadparwaiz1/cmp_luasnip" }
-  use { "rafamadriz/friendly-snippets" }
+          -- Autocompletion
+          {'hrsh7th/nvim-cmp'},         -- Required
+          {'hrsh7th/cmp-nvim-lsp'},     -- Required
+          {'hrsh7th/cmp-buffer'},       -- Optional
+          {'hrsh7th/cmp-path'},         -- Optional
+          {'saadparwaiz1/cmp_luasnip'}, -- Optional
+          {'hrsh7th/cmp-nvim-lua'},     -- Optional
 
+          -- Snippets
+          {'L3MON4D3/LuaSnip'},             -- Required
+          {'rafamadriz/friendly-snippets'}, -- Optional
+      }
+  }
   end)
