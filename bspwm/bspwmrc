@@ -48,8 +48,8 @@ bspc config presel_feedback_color	"#5e81ac"
 #bspc monitor LVDS1 -d 1 2 3 4
 #bspc monitor DP3 -d  5 6 7 8 9
 #bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
-bspc monitor HDMI1 -d 1 2 3 4 5 6
-bspc monitor eDP1 -d 7 8 9 10
+bspc monitor eDP1 -d 1 2 3 4 5
+bspc monitor HDMI1 -d 6 7 8 9 10
 #bspc monitor HDMI1 -d 1 2 3 4 5
 #bspc monitor HDMI2 -d 6 7 8 9 10
 
@@ -57,6 +57,8 @@ bspc monitor eDP1 -d 7 8 9 10
 bspc rule -a inkscape state=fullscreen
 bspc rule -a Vlc state=fullscreen
 bspc rule -a VirtualBox Manager state=fullscreen
+bspc rule -a 'Emacs' state=fullscreen
+bspc rule -a 'tmaster.exe' state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen
 

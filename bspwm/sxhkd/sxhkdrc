@@ -4,7 +4,11 @@
 
 # terminal emulator
 super + Return
-    alacritty
+   kitty 
+
+# emacs
+super + shift + e
+   emacsclient -c -a 'Emacs'
 
 # program launcher
 super + space 
