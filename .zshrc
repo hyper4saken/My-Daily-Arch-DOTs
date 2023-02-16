@@ -129,6 +129,12 @@ alias vi="nvim"
 alias vim="nvim"
 alias v="nvim"
 
+#tmux
+# Create new tmux session with name
+alias ts='tmux new -s'
+# Attach tmux session with name
+alias ta='tmux attach -t'
+
 # neofetch
 alias neofetch='neofetch --image_size none --backend kitty --source /home/hyper4saken/.config/neofetch/assets/kitty-dark.png'
 
