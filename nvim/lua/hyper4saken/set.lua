@@ -1,30 +1,42 @@
 vim.opt.guicursor = ""
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
-
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-
 vim.opt.smartindent = true
-
 vim.opt.wrap = false
-
+vim.opt.list = true
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
-
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
-
-vim.opt.termguicolors = true
-
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
-
 vim.opt.updatetime = 50
-
 vim.opt.colorcolumn = "80"
+vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
+
+-- indent_highlight
+vim.opt.termguicolors = true
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
+require("indent_blankline").setup {
+  space_char_blankline = " ",
+  char_highlight_list = {
+    "IndentBlanklineIndent1",
+    "IndentBlanklineIndent2",
+    "IndentBlanklineIndent3",
+    "IndentBlanklineIndent4",
+    "IndentBlanklineIndent5",
+    "IndentBlanklineIndent6",
+  },
+}

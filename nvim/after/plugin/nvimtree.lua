@@ -1,5 +1,4 @@
 local present, nvimtree = pcall(require, "nvim-tree")
-
 if not present then
   return
 end
@@ -78,6 +77,7 @@ local options = {
   },
 }
 
+-- check for any override
 vim.g.nvimtree_side = options.view.side
 
 nvimtree.setup(options)

@@ -17,6 +17,7 @@ keymap.set("i", "<C-k>", "<Up>") -- move up
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
 keymap.set("n", "<leader>sf", ":w<CR>") -- save file in normal mode
 keymap.set("n", "<leader>wq", ":wq<CR>") --  write and quit nvim
+keymap.set("n", "<leader>q", ":q!<CR>") --  write and quit nvim
 keymap.set("n", "x", '"_x')
 
 -- window split
@@ -42,3 +43,6 @@ keymap.set("n","<leader>sm", ":MaximizerToggle<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>") -- toggle file explore
 
+-- Navigate buffers
+keymap.set("n", "<S-l>", ":bnext<CR>")
+keymap.set("n", "<S-h>", ":bprevious<CR>")

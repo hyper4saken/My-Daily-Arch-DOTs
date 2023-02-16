@@ -4,7 +4,6 @@ lsp.preset('recommended')
 lsp.setup({
     'tsserver',
     'eslint',
-    'sumneko_lua',
     'dockerls',
     'html',
     'marksman',

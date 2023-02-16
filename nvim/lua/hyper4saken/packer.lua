@@ -58,4 +58,13 @@ return require('packer').startup(function(use)
           {'rafamadriz/friendly-snippets'}, -- Optional
       }
   }
+  use "akinsho/toggleterm.nvim"
+
+  -- Buffer lualine
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+
+  -- indent-blankline
+  use "lukas-reineke/indent-blankline.nvim"
+
   end)
