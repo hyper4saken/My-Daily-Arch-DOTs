@@ -10,4 +10,5 @@ NVIM(Highly Customized)
 ## Terminal: 
 Kitty
 
-> I am too lazy to write configs
+## Why there is no detail description
+> I am too lazy to write configs and also README. I think i should move to Emacs
