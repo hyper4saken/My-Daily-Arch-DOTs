@@ -2,12 +2,23 @@
       user-mail-address "hyper4saken@protonmail.com")
 
 ;;fonts
-(setq doom-font (font-spec :family "Hack Nerd Font Mono" :size 18))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 20)
+      doom-variable-pitch-font (font-spec :family "Ubuntu" :size 20)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 24))
+(after! doom-themes
+  (setq doom-themes-enable-bold t
+        doom-themes-enable-italic t))
+(custom-set-faces!
+  '(font-lock-comment-face :slant italic)
+  '(font-lock-keyword-face :slant italic))
 
 ;; theme
-(setq doom-theme 'doom-henna)
+;;(setq doom-theme 'doom-henna)
+;;(setq doom-theme 'doom-tomorrow-night)
+;;(setq doom-theme 'doom-tokyo-night)
+(setq doom-theme 'doom-ayu-dark)
 
-;; relative number
+; relative number
 (setq display-line-numbers-type t)
 
 (map! :leader
