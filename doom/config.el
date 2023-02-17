@@ -1,5 +1,5 @@
 (setq user-full-name "Hyper4Saken"
-      user-mail-address "hyper4saken@protonmail.com")
+      user-mail-address "")
 
 ;;fonts
 (setq doom-font (font-spec :family "JetBrains Mono" :size 20)
