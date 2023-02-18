@@ -74,3 +74,11 @@
 (map! :leader
       :desc "Toggle neotree file viewer" "t n" #'neotree-toggle
       :desc "Open directory in neotree"  "d n" #'neotree-dir)
+
+(set-face-attribute 'mode-line nil :font "Ubuntu Mono-15")
+(setq doom-modeline-height 30     ;; sets modeline height
+      doom-modeline-bar-width 5   ;; sets right bar width
+      doom-modeline-persp-name t  ;; adds perspective name to modeline
+      doom-modeline-persp-icon t   ;; adds folder icon next to persp name
+      doom-modeline-major-mode-icon t  ;; if icons failed major icons selected
+      doom-modeline--buffer-file-state-icon t)  ;;show icon in bufferline
