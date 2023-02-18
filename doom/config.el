@@ -69,8 +69,11 @@
 (after! neotree
   (setq neo-smart-open t
         neo-window-fixed-size nil))
-(after! doom-themes
-  (setq doom-neotree-enable-variable-pitch t))
+(doom-themes-neotree-config)
+;;(after! doom-themes-neotree-config
+(setq doom-themes-neotree-file-icons t
+   doom-neotree-enable-variable-pitch t)
+;;)
 (map! :leader
       :desc "Toggle neotree file viewer" "t n" #'neotree-toggle
       :desc "Open directory in neotree"  "d n" #'neotree-dir)
