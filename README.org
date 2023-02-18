@@ -9,7 +9,7 @@ Currently i am using [[https://github.com/baskerville/bspwm][bspwm]] as my main 
 
 ** Editor:
 *** DOOM EMACS:
-- Currently i am using [[https://github.com/doomemacs/doomemacs][DOOM EMACS]] a configuration framwork for =GNU EMACS=. Some day i will use base emacs, till then i am happy with emacs.
+- Currently i am using [[https://github.com/doomemacs/doomemacs][DOOM EMACS]] a configuration framwork for =GNU EMACS=. Some day i will use base emacs, till then i am happy with DOOOOOOOOM.
 
 *** NEOVIM:
 - I can't imagine my workflow without =vim= especially =Neovim= its hightly inspired by /ThePrimegen/ youtuber.
@@ -23,4 +23,4 @@ Currently i am using [[https://github.com/baskerville/bspwm][bspwm]] as my main 
 - Polybar
 - Picom (picom-ibhgwan-git) with kawase-blur
 - zsh with oh-my-zsh
-- Alacritty Termianl
+- Alacritty Terminal
