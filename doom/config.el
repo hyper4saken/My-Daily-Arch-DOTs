@@ -1,5 +1,5 @@
 (setq user-full-name "Hyper4Saken"
-      user-mail-address "")
+      user-mail-address "hyper4saken@protonmail.com")
 
 ;;fonts
 (setq doom-font (font-spec :family "JetBrains Mono" :size 20)
@@ -85,3 +85,32 @@
       doom-modeline-persp-icon t   ;; adds folder icon next to persp name
       doom-modeline-major-mode-icon t  ;; if icons failed major icons selected
       doom-modeline--buffer-file-state-icon t)  ;;show icon in bufferline
+
+;; tabs with icons
+(setq centaur-tabs-set-bar 'over
+      centaur-tabs-set-icons t
+      centaur-tabs-gray-out-icons 'buffer
+      centaur-tabs-height 24
+      centaur-tabs-set-modified-marker t
+      centaur-tabs-style "bar"
+      centaur-tabs-modified-marker "•")
+(map! :leader
+      :desc "Toggle tabs globally" "t c" #'centaur-tabs-mode
+      :desc "Toggle tabs local display" "t C" #'centaur-tabs-local-mode)
+(evil-define-key 'normal centaur-tabs-mode-map (kbd "g <right>") 'centaur-tabs-forward        ; default Doom binding is 'g t'
+                                               (kbd "g <left>")  'centaur-tabs-backward       ; default Doom binding is 'g T'
+                                               (kbd "g <down>")  'centaur-tabs-forward-group
+                                               (kbd "g <up>")    'centaur-tabs-backward-group)
+
+;; enable emojify mode in gloabl
+(use-package emojify
+  :hook (after-init . global-emojify-mode))
+
+;; custom key bindinds for comment and relative line number
+(map! :leader
+      :desc "Comment or uncomment lines"      "TAB TAB" #'comment-line
+      (:prefix ("t" . "toggle")
+       :desc "Toggle line numbers"            "l" #'doom/toggle-line-numbers
+       :desc "Toggle line highlight in frame" "h" #'hl-line-mode
+       :desc "Toggle line highlight globally" "H" #'global-hl-line-mode
+       :desc "Toggle truncate lines"          "t" #'toggle-truncate-lines))
