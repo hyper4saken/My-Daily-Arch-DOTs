@@ -1,5 +1,5 @@
 (setq user-full-name "Hyper4Saken"
-      user-mail-address "hyper4saken@protonmail.com")
+      user-mail-address " ")
 
 ;;fonts
 (setq doom-font (font-spec :family "JetBrains Mono" :size 20)
@@ -64,6 +64,13 @@
        :desc "Capture to node"     "n" #'org-roam-capture
        :desc "Toggle roam buffer"  "r" #'org-roam-buffer-toggle))
 
+;; org-headers font size
+(set-face-attribute 'org-level-1 nil :height 1.8)
+(set-face-attribute 'org-level-2 nil :height 1.5)
+(set-face-attribute 'org-level-3 nil :height 1.3)
+(set-face-attribute 'org-level-4 nil :height 1.2)
+(set-face-attribute 'org-level-5 nil :height 1.1)
+
 (xterm-mouse-mode 1)
 
 (after! neotree
@@ -115,7 +122,6 @@
        :desc "Toggle line highlight globally" "H" #'global-hl-line-mode
        :desc "Toggle truncate lines"          "t" #'toggle-truncate-lines))
 
-
 ;; calendar config and dates
 (defun hyper/insert-todays-date (prefix)
   (interactive "P")
@@ -150,4 +156,3 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)))
-
