@@ -18,8 +18,10 @@
 ;;(setq doom-theme 'doom-tokyo-night)
 (setq doom-theme 'doom-ayu-dark)
 
-; relative number
-(setq display-line-numbers-type t)
+;; Line numbers relative in global
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode 1)
+
 
 (map! :leader
       :desc "Org babel tangle" "m B" #'org-babel-tangle)
