@@ -5,14 +5,14 @@
 * My Daily Driver =Arch= dots files
 
 ** WindowManager:
-Currently i am using [[https://github.com/baskerville/bspwm][bspwm]] as my main window manager. I have dual boot my laptop with Debloated =Windows10= which i have made custon with help of some thirdparty software.
+Currently i am using [[https://github.com/baskerville/bspwm][bspwm]] as my main window manager. I have dual boot my laptop with Debloated =Windows10= which i have made custom with help of some third-party software.
 
 ** Editor:
 *** DOOM EMACS:
-- Currently i am using [[https://github.com/doomemacs/doomemacs][DOOM EMACS]] a configuration framwork for =GNU EMACS=. Some day i will use base emacs, till then i am happy with DOOOOOOOOM.
+- Currently i am using [[https://github.com/doomemacs/doomemacs][DOOM EMACS]] a configuration framework for =GNU EMACS=. Some day i will use base emacs, till then i am happy with DOOOOOOOOM.
 
 *** NEOVIM:
-- I can't imagine my workflow without =vim= especially =Neovim= its hightly inspired by /ThePrimegen/ youtuber.
+- I can't imagine my workflow without =vim= especially =Neovim= its highly inspired by /ThePrimegen/ Youtuber.
 
 
 **  Terminal:
