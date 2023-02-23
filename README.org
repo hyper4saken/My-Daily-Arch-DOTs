@@ -12,6 +12,7 @@ Currently i am using [[https://github.com/baskerville/bspwm][bspwm]] as my main 
 - Currently i am using [[https://github.com/doomemacs/doomemacs][DOOM EMACS]] a configuration framework for =GNU EMACS=. Some day i will use base emacs, till then i am happy with DOOOOOOOOM.
 
   - =aspell= cannot add word to any active dictionary when you press =z g=
+
     #+begin_src bash
      mkdir -p ~/.emacs.d/.local/etc/ispell && touch ~/.emacs.d/.local/etc/ispell/.pws
     #+end_src
