@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: python-org
+# uuid: /py
+# key: /py
+# --
+
+#+begin_src python :results output
+$0
+#+end_src

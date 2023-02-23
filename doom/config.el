@@ -18,10 +18,9 @@
 ;;(setq doom-theme 'doom-tokyo-night)
 (setq doom-theme 'doom-ayu-dark)
 
-;; Line numbers relative in global
+; relative number
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode 1)
-
 
 (map! :leader
       :desc "Org babel tangle" "m B" #'org-babel-tangle)
@@ -29,8 +28,8 @@
   (setq org-directory "/mnt/Backup/Org/"
         org-default-notes-file (expand-file-name "notes.org" org-directory)
         org-ellipsis " ▼ "
-        org-superstar-headline-bullets-list '("◉" "●" "○" "◆" "●" "○" "◆")
-        org-superstar-itembullet-alist '((?+ . ?➤) (?- . ?✦)) ; changes +/- symbols in item lists
+        org-superstar-headline-bullets-list '("❂" "✪" "❆" "◉" "○" "●" "◆")
+        org-superstar-itembullet-alist '((?+ . ?✠) (?- . ?✦)) ; changes +/- symbols in item lists
         org-log-done 'time
         org-hide-emphasis-markers t
         ;; ex. of org-link-abbrev-alist in action
@@ -67,11 +66,13 @@
        :desc "Toggle roam buffer"  "r" #'org-roam-buffer-toggle))
 
 ;; org-headers font size
-(set-face-attribute 'org-level-1 nil :height 1.8)
-(set-face-attribute 'org-level-2 nil :height 1.5)
-(set-face-attribute 'org-level-3 nil :height 1.3)
-(set-face-attribute 'org-level-4 nil :height 1.2)
-(set-face-attribute 'org-level-5 nil :height 1.1)
+(custom-theme-set-faces
+     'user
+     `(org-level-4 ((t ( :height 1.2))))
+     `(org-level-3 ((t ( :height 1.5))))
+     `(org-level-2 ((t ( :height 1.8))))
+     `(org-level-1 ((t ( :height 2.00))))
+     )
 
 (xterm-mouse-mode 1)
 
@@ -175,11 +176,3 @@
       :desc "Eshell popup toggle"    "e t" #'+eshell/toggle
       :desc "Counsel eshell history" "e h" #'counsel-esh-history
       :desc "Vterm popup toggle"     "v t" #'+vterm/toggle)
-
-;; rainbow mode
-(define-globalized-minor-mode global-rainbow-mode rainbow-mode
-  (lambda ()
-    (when (not (memq major-mode
-                (list 'org-agenda-mode)))
-     (rainbow-mode 1))))
-(global-rainbow-mode 1 )

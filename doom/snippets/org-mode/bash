@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: bash
+# uuid: /ba
+# key: /ba
+# condition: t
+# --
+
+#+begin_src bash
+$0
+#+end_src
