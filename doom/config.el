@@ -176,3 +176,17 @@
       :desc "Eshell popup toggle"    "e t" #'+eshell/toggle
       :desc "Counsel eshell history" "e h" #'counsel-esh-history
       :desc "Vterm popup toggle"     "v t" #'+vterm/toggle)
+
+;;org-download
+;;This extension facilitates moving images from browser filesystems
+(require 'org-download)
+;; Drag-and-drop to `dired`
+(add-hook 'dired-mode-hook 'org-download-enable)
+;; Screen captured is saved on particular folder
+(after! org-download
+  (setq-default org-download-image-dir "/mnt/Backup/Org/notes_images"))
+;; custom keybinding for org-download
+(map! :leader
+      (:prefix ("i v" . "Org Download Mode")
+        :desc "Paste Image"    "a" #'org-download-clipboard
+        :desc "Screen Capture" "s" #'org-download-screenshot))
