@@ -88,7 +88,7 @@
   (setq org-directory "/mnt/Backup/Org/"
         org-default-notes-file (expand-file-name "notes.org" org-directory)
         org-ellipsis " ▼ "
-        org-superstar-headline-bullets-list '("❂" "✪" "❆" "◉" "○" "●" "◆")
+        org-superstar-headline-bullets-list '("❂" "✪" "◉" "○" "●" "◆")
         org-superstar-itembullet-alist '((?+ . ?✠) (?- . ?✦)) ; changes +/- symbols in item lists
         org-log-done 'time
         org-hide-emphasis-markers t
