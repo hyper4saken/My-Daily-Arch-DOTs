@@ -15,8 +15,8 @@ keymap.set("i", "<C-k>", "<Up>") -- move up
 
 -- general keymaps for normal mode
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
-keymap.set("n", "<leader>sf", ":w<CR>") -- save file in normal mode
-keymap.set("n", "<leader>wq", ":wq<CR>") --  write and quit nvim
+keymap.set("n", "<leader>fs", ":w<CR>") -- save file in normal mode
+keymap.set("n", "<leader>bk", ":wq<CR>") --  write and quit nvim
 keymap.set("n", "<leader>q", ":q!<CR>") --  write and quit nvim
 keymap.set("n", "x", '"_x')
 
