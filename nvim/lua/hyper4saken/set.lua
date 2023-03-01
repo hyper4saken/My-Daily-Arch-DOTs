@@ -28,3 +28,7 @@ vim.opt.termguicolors = true
 require("indent_blankline").setup {
     show_end_of_line = true,
 }
+
+-- which-key
+vim.o.timeout = true
+vim.o.timeoutlen = 300

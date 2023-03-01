@@ -68,4 +68,7 @@ return require('packer').startup(function(use)
   -- indent-blankline
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- which-key
+  use { "folke/which-key.nvim"}
+
   end)
