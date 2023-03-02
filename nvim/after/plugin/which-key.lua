@@ -28,7 +28,7 @@ end
 
 local mappings = {
   x = { ":bdelete<cr>", "Close" },
-  E = { ":e ~/.config/nvim/init.lua<cr>", "Edit config" },
+  E = { ":e ~/.config/nvim/lua/hyper4saken/packer.lua<cr>", "Edit Packer" },
   f = { ":Telescope find_files<cr>", "Telescope Find Files" },
   m = { ":MaximizerToggle<cr>", "Vim-Maximize" },
   e = { ":NvimTreeToggle<cr>", "Nvim Tree Toggle" },
@@ -42,9 +42,9 @@ local mappings = {
   },
   s = {
     name = 'Window Split',
-    v = { ":<C-w>v", "Split Window Vertically" },
-    h = { ":<C-w>s", "Split Window Horizontally" },
-    e = { ":<C-w>=", "Split Window Equal Width" },
+    v = { "<C-w>v", "Split Window Vertically" },
+    h = { "<C-w>s", "Split Window Horizontally" },
+    e = { "<C-w>=", "Split Window Equal Width" },
     x = { ":close<CR>=", "Close Window"},
   },
   t = {
@@ -53,6 +53,11 @@ local mappings = {
     x = { ":tabclose<CR>", "Close Current Tab" },
     n = { ":tabn<CR>", "Go to next tab" },
     p = { ":tabp<CR>", "Go to Previous Tab"},
+  },
+  b = {
+    name = 'Buffer',
+    p = { ":bnext<cr>", "Buffer Next" },
+    x = { ":bprevious<CR>", "Buffer Previous" },
   },
   l = {
     name = "LSP",
