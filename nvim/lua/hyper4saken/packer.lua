@@ -17,7 +17,6 @@ return require('packer').startup(function(use)
   use { "folke/tokyonight.nvim" } --theme
   use { "nvim-lualine/lualine.nvim" }
   use { "jiangmiao/auto-pairs" }
-  
   -- tmux & split window navigation
   use { "christoomey/vim-tmux-navigator" }
   use { "szw/vim-maximizer" } -- maximizes and restores current window
@@ -61,6 +60,11 @@ return require('packer').startup(function(use)
   }
   use "akinsho/toggleterm.nvim"
 
+  -- leap
+  use {
+    "ggandor/leap.nvim",
+    config = function() require("leap").set_default_keymaps() end
+  }
   -- Buffer lualine
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
