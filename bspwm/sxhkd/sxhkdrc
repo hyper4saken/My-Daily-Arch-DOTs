@@ -12,7 +12,7 @@ super + shift + e
 
 # program launcher
 super + space 
-     rofi -show drun -show-icons -icon-theme Papirus 
+    ~/.config/rofi/launchers/type-7/launcher.sh
 
 #dmenu
 super + shift + d
@@ -32,7 +32,7 @@ super + alt + f
 
 #arcolinux-logout
 super + x
-    archlinux-logout
+    ~/.config/rofi/powermenu/type-6/powermenu.sh
 
 #Firefox
 super + shift + f
@@ -41,10 +41,6 @@ super + shift + f
 #Brave
 super + shift + b
     Brave
-
-#Rofi theme selector
-ctrl + alt + r
-  rofi-theme-selector
 
 #Spotify
 ctrl + alt + s

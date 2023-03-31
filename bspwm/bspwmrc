@@ -51,6 +51,8 @@ else
     bspc monitor eDP1 -d 1 2 3 4 5
     bspc monitor HDMI1 -d 6 7 8 9 10
 fi
+#Single monitor
+#bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9 10
 
 #Dual monitor
 #find out names with arandr or xrandr
@@ -82,23 +84,29 @@ bspc rule -a 'Tor Browser:Navigator' state=pseudo_tiled private=on
 bspc rule -a 'Nitrogen' state=floating
 bspc rule -a 'Pamac-manager' state=floating
 bspc rule -a 'spotify' state=floating
+bspc rule -a 'Anydesk' state=floating
+bspc rule -a 'Nm-connection-editor' state=floating
 bspc rule -a 'lxappearance' state=floating
 bspc rule -a 'xdman-Main' state=floating
 bspc rule -a 'LibreWolf' state=floating
+bspc rule -a 'stacer' state=floating
 bspc rule -a 'Bitwarden' state=floating
 bspc rule -a 'packettracer' state=floating private=on
+bspc rule -a 'Fr.handbrake.ghb' state=floating
+bspc rule -a 'VirtualBox Manager' state=floating
 #bspc rule -a mpv desktop='^2'  follow=on
 bspc rule -a simplesceenrecorderi desktop='^9' state=floating 
 bspc rule -a Brave-browser state=floating
 bspc rule -a obs desktop='9' state=floating
 bspc rule -a easyeffects desktop='^10' state=floating follow=on
-bspc rule -a qbittorrent state=floating
+bspc rule -a qBittorrent state=floating
 bspc rule -a mpv desktop='^2'state=floating follow=on
 bspc rule -a winscp.exe state=floating
 
 #bspc rule -a mpv state=floating sticky=on
 #bspc rule -a Font-manager state=floating
 bspc rule -a Galculator state=floating
+bspc rule -a SimpleScreenRecorder state=floating
 #bspc rule -a Gpick state=floating sticky=on
 #bspc rule -a Nitrogen state=floating
 bspc rule -a Oblogout state=floating
@@ -109,10 +117,12 @@ bspc rule -a Oblogout state=floating
 bspc rule -a Stacer state=floating
 #bspc rule -a Xfce4-appfinder state=floating sticky=on
 bspc rule -a Xfce4-terminal state=floating
+bspc rule -a "Virt-manager" state=floating
+bspc rule -a Gnome-disks state=floating
 
 #Tiled applications
-bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
+bspc rule -a Zathura state=tiled
 
 #open applications on specific workspaces
 bspc rule -a Firefox desktop='^2' follow=on

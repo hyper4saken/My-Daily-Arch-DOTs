@@ -22,7 +22,7 @@ run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
-picom -b --experimental-backends --config /home/hyper4saken/.config/picom/picom.conf
+#picom -b --experimental-backends --config /home/hyper4saken/.config/picom/picom.conf
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 /usr/bin/emacs --daemon &

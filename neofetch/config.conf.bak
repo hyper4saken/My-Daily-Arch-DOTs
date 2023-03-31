@@ -31,7 +31,7 @@ print_info()
 
     info "Host⠀⠀⠀⠀⠀⠀⠀⠀⠀" model
     info "CPU⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" cpu
-    info "GPU⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" gpu
+#   info "GPU⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" gpu
 #   info "Disk⠀⠀⠀⠀⠀" disk
     info "Memory⠀⠀⠀⠀⠀⠀⠀" memory
     info "Resolution⠀⠀⠀" resolution
@@ -44,11 +44,10 @@ print_info()
     prin "Software Information"
 
 
-    info "OS⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" distro
-#    info "OS           " Arch
+   # info "OS⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" distro
     info "Kernel⠀⠀⠀⠀⠀⠀⠀" kernel
 #   info "Uptime⠀⠀⠀⠀⠀⠀⠀" uptime
-    info "Packages⠀⠀⠀⠀⠀" packages
+#   info "Packages⠀⠀⠀⠀⠀" packages
 #   info "Shell⠀⠀⠀⠀⠀⠀⠀⠀" shell
     info "DE⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" de
     info "WM⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀" wm
@@ -651,7 +650,7 @@ block_range=(0 15)
 # Default:  'on'
 # Values:   'on', 'off'
 # Flag:     --color_blocks
-color_blocks="on"
+color_blocks="off"
 
 # Color block width in spaces
 #
@@ -755,7 +754,7 @@ disk_display="on"
 # Values:   'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off',
 #           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 # Flag:     --backend
-image_backend="iterm2"
+image_backend="ascii"
 
 # Image Source
 #
@@ -821,7 +820,7 @@ image_source="$HOME/.config/neofetch/logo.png"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-#ascii_distro="auto"
+ascii_distro="Arch"
 ascii_distro="Arch"
 # Ascii Colors
 #
