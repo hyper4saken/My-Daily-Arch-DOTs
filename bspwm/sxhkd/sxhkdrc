@@ -39,8 +39,8 @@ super + shift + f
     firefox
 
 #Brave
-super + shift + b
-    Brave
+super + alt + b
+    brave
 
 #Spotify
 ctrl + alt + s
