@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
   }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   -- use { "ellisonleao/gruvbox.nvim" }
-  use { "folke/tokyonight.nvim" } --theme
+  -- use { "folke/tokyonight.nvim" } --theme
+  use { "navarasu/onedark.nvim" }
   use { "nvim-lualine/lualine.nvim" }
   use { "jiangmiao/auto-pairs" }
   -- tmux & split window navigation

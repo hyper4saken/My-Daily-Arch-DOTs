@@ -48,8 +48,8 @@ if [ $connected -eq 1 ]; then
     bspc monitor -d 1 2 3 4 5 6
 else
     # Dual monitor rule
-    bspc monitor eDP1 -d 1 2 3 4 5
-    bspc monitor HDMI1 -d 6 7 8 9 10
+    bspc monitor eDP-1 -d 1 2 3 4 5
+    bspc monitor HDMI-1 -d 6 7 8 9 10
 fi
 #Single monitor
 #bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9 10
@@ -79,6 +79,8 @@ bspc rule -a Arandr state=floating
 bspc rule -a Arcolinux-tweak-tool.py state=floating
 bspc rule -a Arcolinux-welcome-app.py state=floating
 bspc rule -a Arcolinux-calamares-tool.py state=floating
+bspc rule -a 'weasias' state=floating
+bspc rule -a 'Weasis v4.1.1' state=floating
 bspc rule -a feh state=floating
 bspc rule -a 'Tor Browser:Navigator' state=pseudo_tiled private=on
 bspc rule -a 'Nitrogen' state=floating
@@ -95,12 +97,14 @@ bspc rule -a 'packettracer' state=floating private=on
 bspc rule -a 'Fr.handbrake.ghb' state=floating
 bspc rule -a 'VirtualBox Manager' state=floating
 #bspc rule -a mpv desktop='^2'  follow=on
-bspc rule -a simplesceenrecorderi desktop='^9' state=floating 
+bspc rule -a simplesceenrecorderi desktop='^9' state=floating
 bspc rule -a Brave-browser state=floating
 bspc rule -a obs desktop='9' state=floating
-bspc rule -a easyeffects desktop='^10' state=floating follow=on
+bspc rule -a easyeffects desktop='^10' state=floating
+bspc rule -a 'CPod' desktop state=floating
+bspc rule -a lollypop desktop='^10' state=floating follow=on
 bspc rule -a qBittorrent state=floating
-bspc rule -a mpv desktop='^2'state=floating follow=on
+bspc rule -a mpv desktop='^2' state=floating follow=on
 bspc rule -a winscp.exe state=floating
 
 #bspc rule -a mpv state=floating sticky=on
@@ -118,6 +122,7 @@ bspc rule -a Stacer state=floating
 #bspc rule -a Xfce4-appfinder state=floating sticky=on
 bspc rule -a Xfce4-terminal state=floating
 bspc rule -a "Virt-manager" state=floating
+bspc rule -a "kasts" state=floating
 bspc rule -a Gnome-disks state=floating
 
 #Tiled applications
