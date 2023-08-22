@@ -1,1 +1,1 @@
-sleep 3 && picom -b --experimental-backends --config /home/tshering/.config/picom/picom.conf
+sleep 3 && picom -b --config /home/hyper4saken/.config/picom/picom.conf
