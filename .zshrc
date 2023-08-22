@@ -128,6 +128,7 @@ alias update="sudo pacman -Syyu"
 alias vi="nvim"
 alias vim="nvim"
 alias v="nvim"
+alias lg="lazygit"
 
 #tmux
 # Create new tmux session with name
